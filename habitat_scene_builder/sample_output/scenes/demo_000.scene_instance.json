@@ -1,0 +1,214 @@
+{
+  "stage_instance": {
+    "template_name": "stages/van-gogh-room"
+  },
+  "default_lighting": "",
+  "object_instances": [
+    {
+      "template_name": "objects/nested_box",
+      "translation": [
+        3.3972697257995605,
+        -1.4001249074935913,
+        2.2790486812591553
+      ],
+      "rotation": [
+        0.9918210506439209,
+        1.516158772574272e-05,
+        0.12763620913028717,
+        -3.052437932637986e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/sphere",
+      "translation": [
+        4.7053046226501465,
+        -1.4697002172470093,
+        1.370058298110962
+      ],
+      "rotation": [
+        0.04826274886727333,
+        -1.7017231357385754e-06,
+        0.9988346695899963,
+        7.50755305034545e-07
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/donut",
+      "translation": [
+        4.860801696777344,
+        -1.6808373928070068,
+        0.40708449482917786
+      ],
+      "rotation": [
+        0.9948523640632629,
+        -1.5972149469689612e-07,
+        -0.10133495926856995,
+        2.187349394944249e-07
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/chair",
+      "translation": [
+        2.8658640384674072,
+        -1.2694590091705322,
+        3.155965566635132
+      ],
+      "rotation": [
+        0.002022817265242338,
+        1.9613230506365653e-06,
+        0.9999979734420776,
+        -4.423284735821653e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/donut",
+      "translation": [
+        0.4501413404941559,
+        -1.6808375120162964,
+        1.5762907266616821
+      ],
+      "rotation": [
+        0.999427855014801,
+        -2.3675403326706146e-07,
+        -0.03382251784205437,
+        5.678153911503614e-07
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/sphere",
+      "translation": [
+        1.101658821105957,
+        -1.469702959060669,
+        2.464160203933716
+      ],
+      "rotation": [
+        0.998561680316925,
+        1.2202664265714702e-06,
+        -0.0536150224506855,
+        3.3876049201353453e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/donut",
+      "translation": [
+        4.142560005187988,
+        -1.6808375120162964,
+        1.495604157447815
+      ],
+      "rotation": [
+        0.9529654383659363,
+        -1.0949138840032901e-07,
+        0.3030789792537689,
+        -1.7169175237086165e-07
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/sphere",
+      "translation": [
+        1.210237979888916,
+        -1.4326562881469727,
+        1.598866581916809
+      ],
+      "rotation": [
+        0.658033013343811,
+        -0.06011185422539711,
+        0.747473418712616,
+        0.06828402727842331
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/sphere",
+      "translation": [
+        5.451419353485107,
+        -1.4697004556655884,
+        3.004535675048828
+      ],
+      "rotation": [
+        0.9675464034080505,
+        -1.2256213040018338e-06,
+        -0.25269341468811035,
+        9.738346307130996e-08
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/donut",
+      "translation": [
+        5.197394371032715,
+        -1.6808375120162964,
+        1.43887197971344
+      ],
+      "rotation": [
+        0.7138894200325012,
+        1.4356190547459846e-07,
+        0.7002584338188171,
+        -3.0633682968073117e-07
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/donut",
+      "translation": [
+        5.0207929611206055,
+        -1.6808375120162964,
+        2.419076442718506
+      ],
+      "rotation": [
+        0.6058720946311951,
+        3.3923497344545694e-09,
+        -0.7955620288848877,
+        -9.352259411343766e-08
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    },
+    {
+      "template_name": "objects/donut",
+      "translation": [
+        3.7465391159057617,
+        -1.6808373928070068,
+        0.32478347420692444
+      ],
+      "rotation": [
+        0.9240634441375732,
+        -6.344765779431327e-08,
+        -0.38223913311958313,
+        2.804995119731757e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0
+    }
+  ],
+  "articulated_object_instances": [],
+  "navmesh_instance": "demo_000__spot"
+}

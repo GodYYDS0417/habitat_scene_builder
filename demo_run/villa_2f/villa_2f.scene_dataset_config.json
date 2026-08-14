@@ -1,0 +1,49 @@
+{
+  "stages": {
+    "paths": {
+      ".json": [
+        "stages"
+      ]
+    }
+  },
+  "objects": {
+    "paths": {
+      ".json": [
+        "objects"
+      ]
+    }
+  },
+  "articulated_objects": {
+    "paths": {
+      ".json": [
+        "urdf"
+      ]
+    }
+  },
+  "light_setups": {
+    "paths": {
+      ".json": [
+        "lights"
+      ]
+    }
+  },
+  "scene_instances": {
+    "paths": {
+      ".json": [
+        "scenes"
+      ]
+    }
+  },
+  "semantic_scene_descriptor_instances": {
+    "paths": {
+      ".json": [
+        "semantics"
+      ]
+    }
+  },
+  "navmesh_instances": {
+    "villa_2f_000__spot": "navmeshes/villa_2f_000__spot.navmesh",
+    "villa_2f_000__fetch": "navmeshes/villa_2f_000__fetch.navmesh",
+    "villa_2f_000__human": "navmeshes/villa_2f_000__human.navmesh"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "background": 0,
+  "apple": 1,
+  "book": 2,
+  "bottle": 3,
+  "bowl": 4,
+  "box": 5,
+  "cabinet": 6,
+  "chair": 7,
+  "cup": 8,
+  "desk": 9,
+  "keyboard": 10,
+  "lamp": 11,
+  "mug": 12,
+  "nightstand": 13,
+  "orange": 14,
+  "plate": 15,
+  "shelf": 16,
+  "sofa": 17,
+  "table": 18
+}

@@ -1,0 +1,49 @@
+{
+  "stages": {
+    "paths": {
+      ".json": [
+        "stages"
+      ]
+    }
+  },
+  "objects": {
+    "paths": {
+      ".json": [
+        "objects"
+      ]
+    }
+  },
+  "articulated_objects": {
+    "paths": {
+      ".json": [
+        "urdf"
+      ]
+    }
+  },
+  "light_setups": {
+    "paths": {
+      ".json": [
+        "lights"
+      ]
+    }
+  },
+  "scene_instances": {
+    "paths": {
+      ".json": [
+        "scenes"
+      ]
+    }
+  },
+  "semantic_scene_descriptor_instances": {
+    "paths": {
+      ".json": [
+        "semantics"
+      ]
+    }
+  },
+  "navmesh_instances": {
+    "showflat_demo_000__spot": "navmeshes/showflat_demo_000__spot.navmesh",
+    "showflat_demo_000__fetch": "navmeshes/showflat_demo_000__fetch.navmesh",
+    "showflat_demo_000__human": "navmeshes/showflat_demo_000__human.navmesh"
+  }
+}

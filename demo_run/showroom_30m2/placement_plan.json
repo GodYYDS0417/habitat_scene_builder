@@ -1,0 +1,552 @@
+{
+  "format": "habitat_scene_builder_v2_plan",
+  "stage": "/root/C--Explore/habitat_scene_builder/demo_assets/stages/showroom_30m2.glb",
+  "scene": "showroom_30m2_000",
+  "note": "人工可编辑：改 translation/rotation/motion_type 后用 --plan-in 重建",
+  "placements": [
+    {
+      "class": "cabinet",
+      "translation": [
+        2.7549,
+        0.93,
+        -0.363
+      ],
+      "rotation": [
+        0.707118,
+        -6.8e-05,
+        -0.707095,
+        -6.9e-05
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "desk",
+      "translation": [
+        -1.4209,
+        0.405,
+        0.0484
+      ],
+      "rotation": [
+        0.293993,
+        0.0,
+        0.955808,
+        -2e-06
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "nightstand",
+      "translation": [
+        -2.754,
+        0.305,
+        -0.0943
+      ],
+      "rotation": [
+        0.707045,
+        -0.0,
+        0.707168,
+        -2e-06
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "shelf",
+      "translation": [
+        1.2579,
+        0.8375,
+        2.3047
+      ],
+      "rotation": [
+        -0.000527,
+        -2.7e-05,
+        1.0,
+        0.000127
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "sofa",
+      "translation": [
+        -0.6114,
+        0.43,
+        -1.5116
+      ],
+      "rotation": [
+        0.205032,
+        -0.0,
+        0.978755,
+        1e-06
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "table",
+      "translation": [
+        -0.0837,
+        0.41,
+        1.5758
+      ],
+      "rotation": [
+        0.994455,
+        -1e-06,
+        -0.105162,
+        -1e-06
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -1.2688,
+        0.515,
+        2.0221
+      ],
+      "rotation": [
+        0.569008,
+        -1e-06,
+        0.822332,
+        6e-06
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -2.3873,
+        0.515,
+        -0.7713
+      ],
+      "rotation": [
+        0.907372,
+        -3e-06,
+        0.420329,
+        6e-06
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -0.2185,
+        0.5944,
+        2.5602
+      ],
+      "rotation": [
+        0.700011,
+        0.001458,
+        -0.714126,
+        -0.00235
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -0.2519,
+        0.515,
+        -0.2219
+      ],
+      "rotation": [
+        0.783111,
+        1e-05,
+        -0.621882,
+        -3e-06
+      ],
+      "motion_type": "STATIC",
+      "rule": "furniture"
+    },
+    {
+      "class": "keyboard",
+      "translation": [
+        -1.1896,
+        0.84,
+        -1.8812
+      ],
+      "rotation": [
+        0.994661,
+        0.000147,
+        0.103199,
+        -5e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "orange",
+      "translation": [
+        -0.2181,
+        0.975,
+        -2.5262
+      ],
+      "rotation": [
+        0.986578,
+        -0.0,
+        -0.163293,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "orange",
+      "translation": [
+        -2.4056,
+        1.045,
+        -0.8184
+      ],
+      "rotation": [
+        0.990917,
+        0.0,
+        0.134473,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        -0.8346,
+        0.0327,
+        -1.94
+      ],
+      "rotation": [
+        0.919475,
+        0.386327,
+        -0.067692,
+        0.027108
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "cup",
+      "translation": [
+        -0.232,
+        0.84,
+        1.3993
+      ],
+      "rotation": [
+        0.99896,
+        -0.00016,
+        0.045585,
+        6.8e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "bowl",
+      "translation": [
+        0.0371,
+        0.825,
+        1.5004
+      ],
+      "rotation": [
+        0.986022,
+        -0.000145,
+        -0.166616,
+        8.1e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "bowl",
+      "translation": [
+        0.1431,
+        0.965,
+        -2.5217
+      ],
+      "rotation": [
+        0.980742,
+        -9.8e-05,
+        0.195308,
+        -7.3e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "orange",
+      "translation": [
+        -0.1771,
+        0.835,
+        1.5086
+      ],
+      "rotation": [
+        0.968516,
+        -0.0,
+        0.248952,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "bowl",
+      "translation": [
+        0.411,
+        0.965,
+        -2.5162
+      ],
+      "rotation": [
+        0.972157,
+        -1.9e-05,
+        0.234331,
+        -2.2e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        -0.6221,
+        0.872,
+        -1.7083
+      ],
+      "rotation": [
+        0.99985,
+        -0.0,
+        -0.017335,
+        -0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        -1.5322,
+        0.072,
+        -1.2659
+      ],
+      "rotation": [
+        0.971986,
+        0.0,
+        0.235038,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        2.2938,
+        0.072,
+        2.2114
+      ],
+      "rotation": [
+        0.986427,
+        0.0,
+        -0.164201,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "keyboard",
+      "translation": [
+        -0.5043,
+        0.8,
+        1.4302
+      ],
+      "rotation": [
+        0.99632,
+        -2.9e-05,
+        -0.085713,
+        3e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "lamp",
+      "translation": [
+        2.3884,
+        0.4,
+        0.8155
+      ],
+      "rotation": [
+        0.97033,
+        -1.6e-05,
+        0.241786,
+        -8e-06
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        -1.1646,
+        0.822,
+        -0.0352
+      ],
+      "rotation": [
+        0.991492,
+        0.0,
+        -0.130169,
+        -0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "orange",
+      "translation": [
+        -2.4132,
+        1.045,
+        -0.6969
+      ],
+      "rotation": [
+        0.998185,
+        0.0,
+        -0.060229,
+        -0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "book",
+      "translation": [
+        -0.9386,
+        0.8475,
+        -1.5615
+      ],
+      "rotation": [
+        0.988312,
+        -0.000306,
+        0.152444,
+        0.000181
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        0.0699,
+        0.0235,
+        -1.5083
+      ],
+      "rotation": [
+        0.977405,
+        -0.201003,
+        0.058728,
+        -0.028796
+      ],
+      "motion_type": "STATIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "bottle",
+      "translation": [
+        -0.1212,
+        0.97,
+        -1.0993
+      ],
+      "rotation": [
+        0.975563,
+        9.7e-05,
+        0.21972,
+        -0.000106
+      ],
+      "motion_type": "STATIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "book",
+      "translation": [
+        -0.3114,
+        1.0175,
+        -0.2084
+      ],
+      "rotation": [
+        0.973863,
+        0.00022,
+        0.227135,
+        0.000168
+      ],
+      "motion_type": "STATIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "bottle",
+      "translation": [
+        1.3832,
+        1.785,
+        2.2794
+      ],
+      "rotation": [
+        0.975811,
+        0.00015,
+        -0.218615,
+        -0.000121
+      ],
+      "motion_type": "STATIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "lamp",
+      "translation": [
+        1.3915,
+        0.4,
+        1.9669
+      ],
+      "rotation": [
+        0.998514,
+        -3.5e-05,
+        0.054487,
+        -3.8e-05
+      ],
+      "motion_type": "STATIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "mug",
+      "translation": [
+        -1.287,
+        1.055,
+        1.9824
+      ],
+      "rotation": [
+        0.999934,
+        -0.000537,
+        0.011412,
+        0.000778
+      ],
+      "motion_type": "STATIC",
+      "rule": "on_surface"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        2.6859,
+        0.072,
+        2.0928
+      ],
+      "rotation": [
+        0.998569,
+        0.0,
+        0.053471,
+        -0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "on_surface"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "version": "v2",
+  "mode": "semantic",
+  "dataset_config": "/root/C--Explore/habitat_scene_builder/demo_run/showroom_30m2/showroom_30m2.scene_dataset_config.json",
+  "scene_instance": "/root/C--Explore/habitat_scene_builder/demo_run/showroom_30m2/scenes/showroom_30m2_000.scene_instance.json",
+  "object_classes": [
+    "apple",
+    "book",
+    "bottle",
+    "bowl",
+    "box",
+    "cabinet",
+    "chair",
+    "cup",
+    "desk",
+    "keyboard",
+    "lamp",
+    "mug",
+    "nightstand",
+    "orange",
+    "plate",
+    "shelf",
+    "sofa",
+    "table"
+  ],
+  "semantic_id_map": {
+    "apple": 1,
+    "book": 2,
+    "bottle": 3,
+    "bowl": 4,
+    "box": 5,
+    "cabinet": 6,
+    "chair": 7,
+    "cup": 8,
+    "desk": 9,
+    "keyboard": 10,
+    "lamp": 11,
+    "mug": 12,
+    "nightstand": 13,
+    "orange": 14,
+    "plate": 15,
+    "shelf": 16,
+    "sofa": 17,
+    "table": 18
+  },
+  "interactive_ratio": 0.7,
+  "placed_objects": 34,
+  "dynamic_objects": 17,
+  "interactive_check": {
+    "tested": 5,
+    "passed": 4,
+    "details": [
+      {
+        "object": "apple_:0001",
+        "interactive": true,
+        "displacement_m": 0.1435
+      },
+      {
+        "object": "apple_:0002",
+        "interactive": false,
+        "displacement_m": 0.013
+      },
+      {
+        "object": "apple_:0003",
+        "interactive": true,
+        "displacement_m": 0.1383
+      },
+      {
+        "object": "apple_:0004",
+        "interactive": true,
+        "displacement_m": 0.135
+      },
+      {
+        "object": "apple_:0005",
+        "interactive": true,
+        "displacement_m": 0.0833
+      }
+    ]
+  },
+  "stability_check": {
+    "checked": 8,
+    "tipped": [],
+    "ok": true
+  },
+  "navmesh": {
+    "spot": {
+      "ok": true,
+      "navigable_area_m2": 13.439,
+      "file": "navmeshes/showroom_30m2_000__spot.navmesh",
+      "radius": 0.25,
+      "height": 0.65,
+      "max_climb": 0.15,
+      "max_slope": 35.0
+    },
+    "fetch": {
+      "ok": true,
+      "navigable_area_m2": 11.775,
+      "file": "navmeshes/showroom_30m2_000__fetch.navmesh",
+      "radius": 0.3,
+      "height": 1.5,
+      "max_climb": 0.05,
+      "max_slope": 30.0
+    },
+    "human": {
+      "ok": true,
+      "navigable_area_m2": 12.154,
+      "file": "navmeshes/showroom_30m2_000__human.navmesh",
+      "radius": 0.3,
+      "height": 1.7,
+      "max_climb": 0.2,
+      "max_slope": 45.0
+    }
+  },
+  "placement_plan": "/root/C--Explore/habitat_scene_builder/demo_run/showroom_30m2/placement_plan.json",
+  "validate": {
+    "rendered": 6,
+    "dir": "/root/C--Explore/habitat_scene_builder/demo_run/showroom_30m2/_preview",
+    "semantic_ids_seen": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18
+    ],
+    "reload_ok": true,
+    "reloaded_objects": 34,
+    "navmesh_loaded": true
+  }
+}

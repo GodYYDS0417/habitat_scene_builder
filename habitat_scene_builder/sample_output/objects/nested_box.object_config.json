@@ -1,0 +1,26 @@
+{
+  "render_asset": "nested_box.glb",
+  "collision_asset": "nested_box.glb",
+  "up": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "front": [
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "units_to_meters": 1.0,
+  "mass": 1.0,
+  "friction_coefficient": 0.5,
+  "restitution_coefficient": 0.2,
+  "margin": 0.01,
+  "use_bounding_box_for_collision": true,
+  "join_collision_meshes": true,
+  "semantic_id": 4,
+  "shader_type": "material",
+  "user_defined": {
+    "class_name": "nested_box"
+  }
+}

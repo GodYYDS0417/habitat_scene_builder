@@ -1,0 +1,9 @@
+{
+  "background": 0,
+  "5boxes": 1,
+  "chair": 2,
+  "donut": 3,
+  "nested_box": 4,
+  "sphere": 5,
+  "transform_box": 6
+}

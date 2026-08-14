@@ -1,0 +1,127 @@
+{
+  "version": "v2",
+  "mode": "plan",
+  "dataset_config": "/root/C--Explore/habitat_scene_builder/demo_run/villa_2f/villa_2f.scene_dataset_config.json",
+  "scene_instance": "/root/C--Explore/habitat_scene_builder/demo_run/villa_2f/scenes/villa_2f_000.scene_instance.json",
+  "object_classes": [
+    "apple",
+    "bed",
+    "book",
+    "bottle",
+    "bowl",
+    "box",
+    "cabinet",
+    "chair",
+    "coffee_table",
+    "counter",
+    "cup",
+    "desk",
+    "elevator_car",
+    "keyboard",
+    "lamp",
+    "mug",
+    "nightstand",
+    "orange",
+    "plate",
+    "shelf",
+    "sofa",
+    "table",
+    "tv",
+    "tv_stand"
+  ],
+  "semantic_id_map": {
+    "apple": 1,
+    "bed": 2,
+    "book": 3,
+    "bottle": 4,
+    "bowl": 5,
+    "box": 6,
+    "cabinet": 7,
+    "chair": 8,
+    "coffee_table": 9,
+    "counter": 10,
+    "cup": 11,
+    "desk": 12,
+    "elevator_car": 13,
+    "keyboard": 14,
+    "lamp": 15,
+    "mug": 16,
+    "nightstand": 17,
+    "orange": 18,
+    "plate": 19,
+    "shelf": 20,
+    "sofa": 21,
+    "table": 22,
+    "tv": 23,
+    "tv_stand": 24
+  },
+  "interactive_ratio": 0.7,
+  "placed_objects": 71,
+  "dynamic_objects": 42,
+  "interactive_check": {
+    "tested": 5,
+    "passed": 5,
+    "details": [
+      {
+        "object": "apple_:0000",
+        "interactive": true,
+        "displacement_m": 0.0782
+      },
+      {
+        "object": "apple_:0001",
+        "interactive": true,
+        "displacement_m": 0.0797
+      },
+      {
+        "object": "book_:0000",
+        "interactive": true,
+        "displacement_m": 0.0379
+      },
+      {
+        "object": "book_:0001",
+        "interactive": true,
+        "displacement_m": 0.0564
+      },
+      {
+        "object": "book_:0002",
+        "interactive": true,
+        "displacement_m": 0.0547
+      }
+    ]
+  },
+  "stability_check": {
+    "checked": 40,
+    "tipped": [],
+    "ok": true
+  },
+  "navmesh": {
+    "spot": {
+      "ok": true,
+      "navigable_area_m2": 186.236,
+      "file": "navmeshes/villa_2f_000__spot.navmesh",
+      "radius": 0.25,
+      "height": 0.65,
+      "max_climb": 0.15,
+      "max_slope": 35.0
+    },
+    "fetch": {
+      "ok": true,
+      "navigable_area_m2": 172.007,
+      "file": "navmeshes/villa_2f_000__fetch.navmesh",
+      "radius": 0.3,
+      "height": 1.5,
+      "max_climb": 0.05,
+      "max_slope": 30.0
+    },
+    "human": {
+      "ok": true,
+      "navigable_area_m2": 174.617,
+      "file": "navmeshes/villa_2f_000__human.navmesh",
+      "radius": 0.3,
+      "height": 1.7,
+      "max_climb": 0.2,
+      "max_slope": 45.0
+    }
+  },
+  "placement_plan": "/root/C--Explore/habitat_scene_builder/demo_run/villa_2f/placement_plan.json"
+}

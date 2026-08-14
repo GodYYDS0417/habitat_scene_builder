@@ -1,0 +1,714 @@
+{
+  "stage_instance": {
+    "template_name": "stages/showroom_30m2"
+  },
+  "default_lighting": "",
+  "object_instances": [
+    {
+      "template_name": "objects/cabinet",
+      "translation": [
+        2.7549471855163574,
+        0.9299737811088562,
+        -0.36299726366996765
+      ],
+      "rotation": [
+        0.7071180939674377,
+        -6.76466224831529e-05,
+        -0.7070954442024231,
+        -6.909921648912132e-05
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/desk",
+      "translation": [
+        -1.4208694696426392,
+        0.40499985218048096,
+        0.048431288450956345
+      ],
+      "rotation": [
+        0.29399266839027405,
+        1.272846219535495e-07,
+        0.9558076858520508,
+        -1.5401893733724137e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/nightstand",
+      "translation": [
+        -2.7540283203125,
+        0.3049999475479126,
+        -0.09431140869855881
+      ],
+      "rotation": [
+        0.7070452570915222,
+        -4.792361210093077e-07,
+        0.7071682810783386,
+        -2.3583068013977027e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/shelf",
+      "translation": [
+        1.257891058921814,
+        0.8374872803688049,
+        2.3046929836273193
+      ],
+      "rotation": [
+        -0.0005270679830573499,
+        -2.6670129955164157e-05,
+        0.9999998807907104,
+        0.0001271703513339162
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/sofa",
+      "translation": [
+        -0.611408531665802,
+        0.4299994707107544,
+        -1.5115870237350464
+      ],
+      "rotation": [
+        0.20503167808055878,
+        -3.316458503377362e-07,
+        0.9787553548812866,
+        1.1413286529204925e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/table",
+      "translation": [
+        -0.0836995542049408,
+        0.40999963879585266,
+        1.5757770538330078
+      ],
+      "rotation": [
+        0.994455099105835,
+        -7.63015748361795e-07,
+        -0.10516204684972763,
+        -1.0636192655510968e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/chair",
+      "translation": [
+        -1.2687947750091553,
+        0.515000581741333,
+        2.022066831588745
+      ],
+      "rotation": [
+        0.5690082907676697,
+        -1.3311430393514456e-06,
+        0.8223317861557007,
+        5.656700068357168e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/chair",
+      "translation": [
+        -2.387289047241211,
+        0.5150010585784912,
+        -0.7712771892547607
+      ],
+      "rotation": [
+        0.9073717594146729,
+        -3.4449665236024885e-06,
+        0.4203290343284607,
+        5.600193617283367e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/chair",
+      "translation": [
+        -0.21845753490924835,
+        0.5943886041641235,
+        2.5602385997772217
+      ],
+      "rotation": [
+        0.7000113129615784,
+        0.0014578934060409665,
+        -0.7141264081001282,
+        -0.0023495773784816265
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/chair",
+      "translation": [
+        -0.25188085436820984,
+        0.5150011777877808,
+        -0.22189751267433167
+      ],
+      "rotation": [
+        0.7831106781959534,
+        1.009450716082938e-05,
+        -0.6218823790550232,
+        -2.6883758437179495e-06
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "furniture"
+      }
+    },
+    {
+      "template_name": "objects/keyboard",
+      "translation": [
+        -1.189586877822876,
+        0.8400018215179443,
+        -1.8812474012374878
+      ],
+      "rotation": [
+        0.9946607351303101,
+        0.0001471242430852726,
+        0.1031988263130188,
+        -5.0366979849059135e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/orange",
+      "translation": [
+        -0.21805691719055176,
+        0.9749999046325684,
+        -2.5262112617492676
+      ],
+      "rotation": [
+        0.9865776300430298,
+        -1.5299119681219013e-16,
+        -0.16329292953014374,
+        2.5318785903470174e-17
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/orange",
+      "translation": [
+        -2.405632495880127,
+        1.045000433921814,
+        -0.8184421062469482
+      ],
+      "rotation": [
+        0.9909173250198364,
+        2.526555972618453e-18,
+        0.13447250425815582,
+        3.42865097282917e-19
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/apple",
+      "translation": [
+        -0.8345526456832886,
+        0.03265931457281113,
+        -1.9400310516357422
+      ],
+      "rotation": [
+        0.9194749593734741,
+        0.38632720708847046,
+        -0.06769227236509323,
+        0.027108313515782356
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/cup",
+      "translation": [
+        -0.23196756839752197,
+        0.8399976491928101,
+        1.3992724418640137
+      ],
+      "rotation": [
+        0.9989604353904724,
+        -0.00016032987332437187,
+        0.045585282146930695,
+        6.794352520955727e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/bowl",
+      "translation": [
+        0.03705482929944992,
+        0.8249972462654114,
+        1.5004230737686157
+      ],
+      "rotation": [
+        0.9860218167304993,
+        -0.00014466769061982632,
+        -0.16661617159843445,
+        8.059643005253747e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/bowl",
+      "translation": [
+        0.14307858049869537,
+        0.9649912118911743,
+        -2.5217156410217285
+      ],
+      "rotation": [
+        0.9807419776916504,
+        -9.840716666076332e-05,
+        0.1953078657388687,
+        -7.261645077960566e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/orange",
+      "translation": [
+        -0.17709828913211823,
+        0.834999680519104,
+        1.5085759162902832
+      ],
+      "rotation": [
+        0.9685158729553223,
+        -3.9593173210791423e-19,
+        0.24895182251930237,
+        1.3088896558635896e-18
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/bowl",
+      "translation": [
+        0.4110405147075653,
+        0.9649984240531921,
+        -2.516239881515503
+      ],
+      "rotation": [
+        0.9721567630767822,
+        -1.857086317613721e-05,
+        0.23433144390583038,
+        -2.235153442597948e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/apple",
+      "translation": [
+        -0.6220865845680237,
+        0.8719998002052307,
+        -1.708316445350647
+      ],
+      "rotation": [
+        0.9998497366905212,
+        -7.294707298758138e-19,
+        -0.01733505353331566,
+        -2.3508436819605247e-19
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/apple",
+      "translation": [
+        -1.5322234630584717,
+        0.07199998199939728,
+        -1.2659333944320679
+      ],
+      "rotation": [
+        0.9719861149787903,
+        1.09910730537922e-17,
+        0.23503826558589935,
+        3.258173236183842e-18
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/apple",
+      "translation": [
+        2.2938475608825684,
+        0.07199998199939728,
+        2.2113914489746094
+      ],
+      "rotation": [
+        0.9864268898963928,
+        5.57009103928854e-19,
+        -0.1642010658979416,
+        3.3461933183704566e-18
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/keyboard",
+      "translation": [
+        -0.5042610168457031,
+        0.7999961376190186,
+        1.430176854133606
+      ],
+      "rotation": [
+        0.9963198304176331,
+        -2.9456992706400342e-05,
+        -0.0857134461402893,
+        2.961048267025035e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/lamp",
+      "translation": [
+        2.3884434700012207,
+        0.4000009000301361,
+        0.8155151605606079
+      ],
+      "rotation": [
+        0.9703297019004822,
+        -1.579918352945242e-05,
+        0.24178558588027954,
+        -7.809737326169852e-06
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/apple",
+      "translation": [
+        -1.1646424531936646,
+        0.821999192237854,
+        -0.03520556911826134
+      ],
+      "rotation": [
+        0.9914917945861816,
+        6.310312092748429e-20,
+        -0.13016919791698456,
+        -4.34608913942698e-19
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/orange",
+      "translation": [
+        -2.4132025241851807,
+        1.0450005531311035,
+        -0.6968910694122314
+      ],
+      "rotation": [
+        0.9981845617294312,
+        6.038234423950809e-19,
+        -0.06022940203547478,
+        -6.415503746518002e-19
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/book",
+      "translation": [
+        -0.9385825395584106,
+        0.8474807143211365,
+        -1.561523675918579
+      ],
+      "rotation": [
+        0.9883120656013489,
+        -0.0003057267458643764,
+        0.15244388580322266,
+        0.00018114953127223998
+      ],
+      "motion_type": "DYNAMIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": true
+      }
+    },
+    {
+      "template_name": "objects/apple",
+      "translation": [
+        0.06988593935966492,
+        0.023502811789512634,
+        -1.5083030462265015
+      ],
+      "rotation": [
+        0.9774045944213867,
+        -0.2010025531053543,
+        0.058728281408548355,
+        -0.028796246275305748
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": false
+      }
+    },
+    {
+      "template_name": "objects/bottle",
+      "translation": [
+        -0.12116711586713791,
+        0.9699997305870056,
+        -1.0992815494537354
+      ],
+      "rotation": [
+        0.9755628705024719,
+        9.684965334599838e-05,
+        0.21972045302391052,
+        -0.00010630331962602213
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": false
+      }
+    },
+    {
+      "template_name": "objects/book",
+      "translation": [
+        -0.31144970655441284,
+        1.0174959897994995,
+        -0.2083955705165863
+      ],
+      "rotation": [
+        0.9738633036613464,
+        0.00022044948127586395,
+        0.22713473439216614,
+        0.00016758542915340513
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": false
+      }
+    },
+    {
+      "template_name": "objects/bottle",
+      "translation": [
+        1.3832422494888306,
+        1.785001277923584,
+        2.279430866241455
+      ],
+      "rotation": [
+        0.9758111238479614,
+        0.00014962078421376646,
+        -0.21861524879932404,
+        -0.00012064113252563402
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": false
+      }
+    },
+    {
+      "template_name": "objects/lamp",
+      "translation": [
+        1.3914990425109863,
+        0.3999967873096466,
+        1.9668983221054077
+      ],
+      "rotation": [
+        0.9985144734382629,
+        -3.4770961065078154e-05,
+        0.05448710173368454,
+        -3.8030546420486644e-05
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": false
+      }
+    },
+    {
+      "template_name": "objects/mug",
+      "translation": [
+        -1.2869758605957031,
+        1.0549970865249634,
+        1.9824011325836182
+      ],
+      "rotation": [
+        0.9999344348907471,
+        -0.0005374239990487695,
+        0.011411910876631737,
+        0.0007780793821439147
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": false
+      }
+    },
+    {
+      "template_name": "objects/apple",
+      "translation": [
+        2.685892105102539,
+        0.07199998199939728,
+        2.0927555561065674
+      ],
+      "rotation": [
+        0.9985694289207458,
+        5.7039878959534924e-21,
+        0.053470514714717865,
+        -1.2851251187564591e-19
+      ],
+      "motion_type": "STATIC",
+      "translation_origin": "COM",
+      "uniform_scale": 1.0,
+      "user_defined": {
+        "placement_rule": "on_surface",
+        "graspable": false
+      }
+    }
+  ],
+  "articulated_object_instances": [],
+  "navmesh_instance": "showroom_30m2_000__spot"
+}

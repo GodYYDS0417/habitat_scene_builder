@@ -1,0 +1,134 @@
+{
+  "version": "v2",
+  "mode": "semantic",
+  "dataset_config": "/root/C--Explore/habitat_scene_builder/demo_run/showflat_demo/showflat_demo.scene_dataset_config.json",
+  "scene_instance": "/root/C--Explore/habitat_scene_builder/demo_run/showflat_demo/scenes/showflat_demo_000.scene_instance.json",
+  "object_classes": [
+    "apple",
+    "book",
+    "bottle",
+    "bowl",
+    "box",
+    "cabinet",
+    "chair",
+    "cup",
+    "desk",
+    "keyboard",
+    "lamp",
+    "mug",
+    "nightstand",
+    "orange",
+    "plate",
+    "shelf",
+    "sofa",
+    "table"
+  ],
+  "semantic_id_map": {
+    "apple": 1,
+    "book": 2,
+    "bottle": 3,
+    "bowl": 4,
+    "box": 5,
+    "cabinet": 6,
+    "chair": 7,
+    "cup": 8,
+    "desk": 9,
+    "keyboard": 10,
+    "lamp": 11,
+    "mug": 12,
+    "nightstand": 13,
+    "orange": 14,
+    "plate": 15,
+    "shelf": 16,
+    "sofa": 17,
+    "table": 18
+  },
+  "interactive_ratio": 0.7,
+  "placed_objects": 24,
+  "dynamic_objects": 14,
+  "interactive_check": {
+    "tested": 5,
+    "passed": 5,
+    "details": [
+      {
+        "object": "apple_:0001",
+        "interactive": true,
+        "displacement_m": 0.1527
+      },
+      {
+        "object": "book_:0000",
+        "interactive": true,
+        "displacement_m": 0.0649
+      },
+      {
+        "object": "book_:0001",
+        "interactive": true,
+        "displacement_m": 0.0497
+      },
+      {
+        "object": "bowl_:0000",
+        "interactive": true,
+        "displacement_m": 0.0557
+      },
+      {
+        "object": "bowl_:0001",
+        "interactive": true,
+        "displacement_m": 0.0652
+      }
+    ]
+  },
+  "stability_check": {
+    "checked": 11,
+    "tipped": [],
+    "ok": true
+  },
+  "navmesh": {
+    "spot": {
+      "ok": true,
+      "navigable_area_m2": 8.135,
+      "file": "navmeshes/showflat_demo_000__spot.navmesh",
+      "radius": 0.25,
+      "height": 0.65,
+      "max_climb": 0.15,
+      "max_slope": 35.0
+    },
+    "fetch": {
+      "ok": true,
+      "navigable_area_m2": 5.731,
+      "file": "navmeshes/showflat_demo_000__fetch.navmesh",
+      "radius": 0.3,
+      "height": 1.5,
+      "max_climb": 0.05,
+      "max_slope": 30.0
+    },
+    "human": {
+      "ok": true,
+      "navigable_area_m2": 8.157,
+      "file": "navmeshes/showflat_demo_000__human.navmesh",
+      "radius": 0.3,
+      "height": 1.7,
+      "max_climb": 0.2,
+      "max_slope": 45.0
+    }
+  },
+  "placement_plan": "/root/C--Explore/habitat_scene_builder/demo_run/showflat_demo/placement_plan.json",
+  "validate": {
+    "rendered": 6,
+    "dir": "/root/C--Explore/habitat_scene_builder/demo_run/showflat_demo/_preview",
+    "semantic_ids_seen": [
+      1,
+      2,
+      3,
+      7,
+      8,
+      9,
+      10,
+      14,
+      15,
+      17
+    ],
+    "reload_ok": true,
+    "reloaded_objects": 24,
+    "navmesh_loaded": true
+  }
+}

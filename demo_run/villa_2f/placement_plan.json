@@ -1,0 +1,1144 @@
+{
+  "format": "habitat_scene_builder_v2_plan",
+  "stage": "/root/C--Explore/habitat_scene_builder/demo_assets/stages/villa_2f.glb",
+  "scene": "villa_2f_000",
+  "note": "人工可编辑：改 translation/rotation/motion_type 后用 --plan-in 重建",
+  "placements": [
+    {
+      "class": "tv_stand",
+      "translation": [
+        0.9,
+        0.0,
+        1.7
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "tv",
+      "translation": [
+        0.9,
+        0.45,
+        1.7
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        -0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "sofa",
+      "translation": [
+        -4.55,
+        0.0,
+        1.7
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "coffee_table",
+      "translation": [
+        -3.32,
+        0.0,
+        1.7
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "bowl",
+      "translation": [
+        -3.4715,
+        0.42,
+        1.5506
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        -3.2,
+        0.42,
+        1.6
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "apple",
+      "translation": [
+        -3.16,
+        0.42,
+        1.8
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cup",
+      "translation": [
+        -3.58,
+        0.42,
+        1.8595
+      ],
+      "rotation": [
+        1.0,
+        0.000488,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cup",
+      "translation": [
+        -3.0701,
+        0.42,
+        1.4614
+      ],
+      "rotation": [
+        0.999997,
+        0.000381,
+        -0.002329,
+        -0.000178
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        -3.32,
+        0.42,
+        1.8196
+      ],
+      "rotation": [
+        0.980061,
+        -0.000171,
+        0.198699,
+        -5.1e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "lamp",
+      "translation": [
+        -4.5513,
+        0.0303,
+        4.4008
+      ],
+      "rotation": [
+        0.999998,
+        0.000951,
+        0.000327,
+        0.00171
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "table",
+      "translation": [
+        -1.5,
+        0.0,
+        -1.1
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -1.9,
+        0.0,
+        -0.325
+      ],
+      "rotation": [
+        0.235987,
+        0.0,
+        0.971756,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -1.1,
+        0.0,
+        -0.325
+      ],
+      "rotation": [
+        0.235987,
+        0.0,
+        -0.971756,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -1.9,
+        0.0,
+        -1.875
+      ],
+      "rotation": [
+        0.971756,
+        0.0,
+        0.235987,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -1.1,
+        0.0,
+        -1.875
+      ],
+      "rotation": [
+        0.971756,
+        0.0,
+        -0.235987,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "plate",
+      "translation": [
+        -1.9,
+        0.75,
+        -0.92
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "plate",
+      "translation": [
+        -1.1,
+        0.75,
+        -0.92
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "plate",
+      "translation": [
+        -1.9,
+        0.75,
+        -1.28
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "plate",
+      "translation": [
+        -1.1,
+        0.75,
+        -1.28
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cup",
+      "translation": [
+        -1.6202,
+        0.75,
+        -0.8584
+      ],
+      "rotation": [
+        1.0,
+        0.000345,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cup",
+      "translation": [
+        -1.3798,
+        0.75,
+        -1.3418
+      ],
+      "rotation": [
+        1.0,
+        0.000345,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "bottle",
+      "translation": [
+        -1.76,
+        0.75,
+        -1.1
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "bowl",
+      "translation": [
+        -1.2398,
+        0.75,
+        -1.1
+      ],
+      "rotation": [
+        1.0,
+        0.000345,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "counter",
+      "translation": [
+        -3.5,
+        0.0,
+        -4.53
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "bottle",
+      "translation": [
+        -4.2,
+        0.8601,
+        -4.5005
+      ],
+      "rotation": [
+        0.999999,
+        -0.00101,
+        5e-06,
+        0.00054
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "bottle",
+      "translation": [
+        -3.9,
+        0.8599,
+        -4.5601
+      ],
+      "rotation": [
+        1.0,
+        0.000345,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "plate",
+      "translation": [
+        -3.3,
+        0.86,
+        -4.4998
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "box",
+      "translation": [
+        -2.8411,
+        0.86,
+        -4.5055
+      ],
+      "rotation": [
+        0.989286,
+        -0.000138,
+        0.145988,
+        2.6e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cabinet",
+      "translation": [
+        0.85,
+        0.0,
+        -3.6
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "box",
+      "translation": [
+        -1.5022,
+        0.03,
+        -4.5014
+      ],
+      "rotation": [
+        0.994367,
+        -3.4e-05,
+        0.105987,
+        3e-06
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "desk",
+      "translation": [
+        4.68,
+        0.0,
+        3.0
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        -0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        3.98,
+        0.0,
+        3.0
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "keyboard",
+      "translation": [
+        4.5,
+        0.75,
+        3.0
+      ],
+      "rotation": [
+        0.707105,
+        -0.000283,
+        -0.707109,
+        -0.000283
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        4.68,
+        0.7494,
+        2.6406
+      ],
+      "rotation": [
+        0.98857,
+        0.002234,
+        0.150745,
+        -0.000777
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "mug",
+      "translation": [
+        4.74,
+        0.75,
+        3.32
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "shelf",
+      "translation": [
+        1.4,
+        0.0,
+        1.5
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        1.3996,
+        0.415,
+        1.3195
+      ],
+      "rotation": [
+        0.994801,
+        -7e-06,
+        0.101842,
+        -3e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        1.4,
+        0.815,
+        1.6199
+      ],
+      "rotation": [
+        0.994948,
+        0.00011,
+        -0.100391,
+        9.7e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        1.3998,
+        1.215,
+        1.4506
+      ],
+      "rotation": [
+        0.998723,
+        -0.000102,
+        0.050524,
+        -0.000114
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "lamp",
+      "translation": [
+        3.3,
+        0.03,
+        4.5502
+      ],
+      "rotation": [
+        1.0,
+        0.000488,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "elevator_car",
+      "translation": [
+        4.0,
+        0.0,
+        -4.1
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "elevator"
+    },
+    {
+      "class": "bed",
+      "translation": [
+        -3.85,
+        2.9,
+        3.0
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "nightstand",
+      "translation": [
+        -4.6,
+        2.9,
+        1.75
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "nightstand",
+      "translation": [
+        -4.6,
+        2.9,
+        4.25
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "lamp",
+      "translation": [
+        -4.6,
+        3.3996,
+        1.75
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "mug",
+      "translation": [
+        -4.5996,
+        3.4,
+        4.2188
+      ],
+      "rotation": [
+        1.0,
+        0.000345,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        -4.573,
+        3.4,
+        4.3365
+      ],
+      "rotation": [
+        0.976096,
+        5.5e-05,
+        0.21734,
+        -0.000124
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cabinet",
+      "translation": [
+        -2.5,
+        2.9,
+        0.55
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "box",
+      "translation": [
+        -1.348,
+        2.93,
+        4.5037
+      ],
+      "rotation": [
+        0.995334,
+        -8e-06,
+        0.096492,
+        4.7e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "box",
+      "translation": [
+        -1.7189,
+        2.93,
+        4.3821
+      ],
+      "rotation": [
+        0.988354,
+        6e-06,
+        -0.152171,
+        -2e-06
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "bed",
+      "translation": [
+        -3.9,
+        2.9,
+        -3.85
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "nightstand",
+      "translation": [
+        -2.48,
+        2.9,
+        -4.6
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        -2.48,
+        3.4,
+        -4.58
+      ],
+      "rotation": [
+        0.988771,
+        -0.0,
+        0.149438,
+        -0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cabinet",
+      "translation": [
+        -2.35,
+        2.9,
+        -1.65
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "desk",
+      "translation": [
+        -0.3,
+        2.9,
+        -4.5
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        -0.3,
+        2.9,
+        -3.85
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "keyboard",
+      "translation": [
+        -0.3,
+        3.65,
+        -4.36
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        -0.6201,
+        3.65,
+        -4.4999
+      ],
+      "rotation": [
+        0.995072,
+        0.000176,
+        0.09915,
+        -8.1e-05
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cup",
+      "translation": [
+        0.0212,
+        3.65,
+        -4.4204
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "shelf",
+      "translation": [
+        -1.75,
+        2.9,
+        -3.0
+      ],
+      "rotation": [
+        0.707107,
+        0.0,
+        0.707107,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        -1.75,
+        3.315,
+        -3.12
+      ],
+      "rotation": [
+        0.99875,
+        0.0,
+        0.049979,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "book",
+      "translation": [
+        -1.7499,
+        3.715,
+        -2.8805
+      ],
+      "rotation": [
+        0.998681,
+        0.000158,
+        -0.05134,
+        0.000206
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "table",
+      "translation": [
+        4.3,
+        2.9,
+        3.2
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        4.3,
+        2.9,
+        4.2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "chair",
+      "translation": [
+        3.5,
+        2.9,
+        2.2
+      ],
+      "rotation": [
+        0.943628,
+        0.0,
+        0.331007,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cup",
+      "translation": [
+        4.0941,
+        3.65,
+        3.0794
+      ],
+      "rotation": [
+        1.0,
+        0.000772,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cup",
+      "translation": [
+        4.5058,
+        3.65,
+        3.3205
+      ],
+      "rotation": [
+        1.0,
+        0.000488,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "bottle",
+      "translation": [
+        4.3,
+        3.65,
+        3.2
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "cabinet",
+      "translation": [
+        1.6,
+        2.9,
+        4.55
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "STATIC",
+      "rule": "floorplan"
+    },
+    {
+      "class": "lamp",
+      "translation": [
+        4.6998,
+        2.93,
+        4.6
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "motion_type": "DYNAMIC",
+      "rule": "floorplan"
+    }
+  ]
+}

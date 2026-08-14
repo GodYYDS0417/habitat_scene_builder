@@ -1,0 +1,63 @@
+{
+  "dataset_config": "/home/aslam/hsb_build/data/scene_builder/demo/demo.scene_dataset_config.json",
+  "scene_instance": "/home/aslam/hsb_build/data/scene_builder/demo/scenes/demo_000.scene_instance.json",
+  "object_classes": [
+    "5boxes",
+    "chair",
+    "donut",
+    "nested_box",
+    "sphere",
+    "transform_box"
+  ],
+  "semantic_id_map": {
+    "5boxes": 1,
+    "chair": 2,
+    "donut": 3,
+    "nested_box": 4,
+    "sphere": 5,
+    "transform_box": 6
+  },
+  "placed_objects": 12,
+  "navmesh": {
+    "spot": {
+      "ok": true,
+      "navigable_area_m2": 5.89,
+      "file": "navmeshes/demo_000__spot.navmesh",
+      "radius": 0.25,
+      "height": 0.65,
+      "max_climb": 0.15,
+      "max_slope": 35.0
+    },
+    "fetch": {
+      "ok": true,
+      "navigable_area_m2": 3.013,
+      "file": "navmeshes/demo_000__fetch.navmesh",
+      "radius": 0.3,
+      "height": 1.5,
+      "max_climb": 0.05,
+      "max_slope": 30.0
+    },
+    "human": {
+      "ok": true,
+      "navigable_area_m2": 5.245,
+      "file": "navmeshes/demo_000__human.navmesh",
+      "radius": 0.3,
+      "height": 1.7,
+      "max_climb": 0.2,
+      "max_slope": 45.0
+    }
+  },
+  "validate": {
+    "rendered": 6,
+    "dir": "/home/aslam/hsb_build/data/scene_builder/demo/_preview",
+    "semantic_ids_seen": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "reload_ok": true,
+    "reloaded_objects": 12,
+    "navmesh_loaded": true
+  }
+}

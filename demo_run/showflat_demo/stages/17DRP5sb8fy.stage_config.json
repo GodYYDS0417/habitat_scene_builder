@@ -1,0 +1,30 @@
+{
+  "render_asset": "17DRP5sb8fy.glb",
+  "collision_asset": "17DRP5sb8fy.glb",
+  "up": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "front": [
+    0.0,
+    0.0,
+    -1.0
+  ],
+  "origin": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "units_to_meters": 1.0,
+  "gravity": [
+    0.0,
+    -9.8,
+    0.0
+  ],
+  "margin": 0.03,
+  "friction_coefficient": 0.4,
+  "restitution_coefficient": 0.1,
+  "is_collidable": true,
+  "shader_type": "material"
+}
