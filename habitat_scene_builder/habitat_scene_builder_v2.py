@@ -121,6 +121,11 @@ OBJECT_PROFILES: dict[str, dict[str, Any]] = {
     "orange":     dict(furniture=False, mass=0.18, round=True),
     "box":        dict(furniture=False, mass=0.60),
     "keyboard":   dict(furniture=False, mass=0.80),
+    # 火灾救援假人：躺姿人形，DYNAMIC 可被机器人搬运（attach 跟随）
+    "dummy":      dict(furniture=False, mass=25.0),
+    # 电梯部件：STATIC 不可抓。门扇演示时改 KINEMATIC 滑动开关
+    "elevator_door": dict(furniture=True, mass=30.0),
+    "elevator_panel": dict(furniture=True, mass=5.0),
 }
 DEFAULT_PROFILE = dict(furniture=False, mass=0.5)
 

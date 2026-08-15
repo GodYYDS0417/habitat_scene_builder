@@ -16,7 +16,10 @@
     "counter",
     "cup",
     "desk",
+    "dummy",
     "elevator_car",
+    "elevator_door",
+    "elevator_panel",
     "keyboard",
     "lamp",
     "mug",
@@ -42,22 +45,25 @@
     "counter": 10,
     "cup": 11,
     "desk": 12,
-    "elevator_car": 13,
-    "keyboard": 14,
-    "lamp": 15,
-    "mug": 16,
-    "nightstand": 17,
-    "orange": 18,
-    "plate": 19,
-    "shelf": 20,
-    "sofa": 21,
-    "table": 22,
-    "tv": 23,
-    "tv_stand": 24
+    "dummy": 13,
+    "elevator_car": 14,
+    "elevator_door": 15,
+    "elevator_panel": 16,
+    "keyboard": 17,
+    "lamp": 18,
+    "mug": 19,
+    "nightstand": 20,
+    "orange": 21,
+    "plate": 22,
+    "shelf": 23,
+    "sofa": 24,
+    "table": 25,
+    "tv": 26,
+    "tv_stand": 27
   },
   "interactive_ratio": 0.7,
-  "placed_objects": 71,
-  "dynamic_objects": 42,
+  "placed_objects": 72,
+  "dynamic_objects": 43,
   "interactive_check": {
     "tested": 5,
     "passed": 5,
@@ -75,7 +81,7 @@
       {
         "object": "book_:0000",
         "interactive": true,
-        "displacement_m": 0.0379
+        "displacement_m": 0.0368
       },
       {
         "object": "book_:0001",
@@ -85,12 +91,12 @@
       {
         "object": "book_:0002",
         "interactive": true,
-        "displacement_m": 0.0547
+        "displacement_m": 0.0542
       }
     ]
   },
   "stability_check": {
-    "checked": 40,
+    "checked": 41,
     "tipped": [],
     "ok": true
   },

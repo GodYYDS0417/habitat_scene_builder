@@ -24,7 +24,7 @@
   "join_collision_meshes": false,
   "is_collidable": true,
   "compute_COM_from_shape": true,
-  "semantic_id": 14,
+  "semantic_id": 17,
   "shader_type": "pbr",
   "user_defined": {
     "class_name": "keyboard",

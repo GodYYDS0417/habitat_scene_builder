@@ -24,7 +24,7 @@
   "join_collision_meshes": false,
   "is_collidable": true,
   "compute_COM_from_shape": true,
-  "semantic_id": 23,
+  "semantic_id": 26,
   "shader_type": "pbr",
   "user_defined": {
     "class_name": "tv",

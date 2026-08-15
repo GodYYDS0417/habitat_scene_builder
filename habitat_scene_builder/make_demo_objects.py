@@ -60,6 +60,27 @@ def _zup_to_yup(obj):
 # 所有模型原点放在物体底部中心 (y=0 是支撑面)，Y-up，单位米。
 # 尺寸参考真实户型工程数据（安居客 94㎡ 2室2厅：沙发 3x0.8、电视柜 3x0.5、
 # 茶几 2x0.6、餐桌 2x0.8、床 2x2m、床头柜 0.5x0.5、衣柜 3x0.6）。
+def _make_dummy():
+    """火灾救援假人（躺姿人形）：躯干+头+四肢，体长沿 ±z，背部贴床 y=0。"""
+    parts = [
+        _box((0.34, 0.16, 0.72), (0, 0.08, 0.10)),      # 躯干
+        _sphere(0.11, (0, 0.10, 0.55)),                  # 头
+        _cyl(0.07, 0.62, (0.0, 0.07, -0.45)),            # 双腿（合并）
+        _cyl(0.045, 0.55, (0.22, 0.10, 0.18)),           # 右臂
+        _cyl(0.045, 0.55, (-0.22, 0.10, 0.18)),          # 左臂
+    ]
+    return _concat(parts)
+
+
+def _make_elevator_panel():
+    """电梯按钮面板：面板 + 上下两个凸出按钮（装门旁墙上，中心约1.2m高）。"""
+    return _concat([
+        _box((0.14, 0.22, 0.04), (0, 0.11, 0)),       # 面板
+        _cyl(0.026, 0.02, (0, 0.16, 0.028)),          # 上按钮（选层）
+        _cyl(0.026, 0.02, (0, 0.07, 0.028)),          # 下按钮（呼叫）
+    ])
+
+
 BUILDERS = {
     # ---- 家具（STATIC）----
     "table": lambda: _concat([          # 餐桌 1.6x0.85（真实容量 2x0.8）
@@ -130,6 +151,10 @@ BUILDERS = {
     "orange": lambda: _sphere(0.045, (0, 0.045, 0)),
     "box": lambda: _box((0.18, 0.12, 0.12), (0, 0.06, 0)),
     "keyboard": lambda: _box((0.36, 0.02, 0.13), (0, 0.01, 0)),
+    "dummy": _make_dummy,
+    # 电梯部件：门扇（演示时 KINEMATIC 滑动）；按钮面板（STATIC 装墙）
+    "elevator_door": lambda: _box((0.40, 2.10, 0.05), (0, 1.05, 0)),
+    "elevator_panel": _make_elevator_panel,
 }
 
 
@@ -142,15 +167,18 @@ def main() -> None:
 
     args.out.mkdir(parents=True, exist_ok=True)
     names = args.only or sorted(BUILDERS)
+    # 个别物体用深色以区分场景（电梯门扇 vs 浅色轿厢/墙）
+    DARK_COLORS = {"elevator_door": (96, 99, 104, 255)}
     for name in names:
         if name not in BUILDERS:
             raise SystemExit(f"未知物体: {name}，可选: {sorted(BUILDERS)}")
         obj = BUILDERS[name]()
         geoms = list(obj.geometry.values()) if isinstance(obj, trimesh.Scene) else [obj]
         # 统一上色，避免默认材质太白
+        color = DARK_COLORS.get(name, (180, 180, 180, 255))
         for g in geoms:
             g.visual = trimesh.visual.ColorVisuals(
-                g, face_colors=np.tile([180, 180, 180, 255], (len(g.faces), 1)))
+                g, face_colors=np.tile(color, (len(g.faces), 1)))
         out = args.out / f"{name}.glb"
         obj.export(out)
         ext = obj.extents

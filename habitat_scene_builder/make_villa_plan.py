@@ -115,6 +115,8 @@ def build_plan(rng: random.Random) -> list[dict]:
 
     # ================= F2 主卧（床贴西墙 + 双床头柜 + 衣柜）==================
     P.append(put("bed", -3.85, F2, 3.0, math.pi / 2))             # 床头板贴西墙
+    # 火灾救援假人：躺在二楼主卧床面（床面 y≈F2+0.55），DYNAMIC 可搬运
+    P.append(put("dummy", -3.85, F2 + 0.55, 3.0, math.pi / 2, "DYNAMIC", rule="rescue"))
     P.append(put("nightstand", -4.60, F2, 1.75, math.pi / 2))
     P.append(put("nightstand", -4.60, F2, 4.25, math.pi / 2))
     P.append(put("lamp", -4.60, F2 + NIGHT_TOP, 1.75, 0, "DYNAMIC"))
