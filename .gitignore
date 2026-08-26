@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Output videos and images
+output/*.mp4
+output/*.png
+output/*.jpg
+output/*.gif
+!output/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Habitat data (large files)
+data/
+*.glb
+*.gltf
+*.obj
+*.ply
+*.navmesh
+*.json.xz
