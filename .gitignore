@@ -32,3 +32,7 @@ data/
 *.ply
 *.navmesh
 *.json.xz
+
+# Generated datasets
+dataset/
+*.tar.gz

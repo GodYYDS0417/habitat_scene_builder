@@ -117,6 +117,28 @@ class VillaConfig:
     include_elevator: bool = True
     include_basement: bool = False
     furniture_density: float = 1.0
+    variation: float = 0.0  # 0.0 = deterministic, 1.0 = max randomization
+
+    @classmethod
+    def random(cls, seed: int, num_floors: int = None) -> "VillaConfig":
+        """Create a randomized villa config from a seed.
+
+        Varies footprint dimensions, floor height, and furniture density
+        while keeping the layout valid (walls aligned, stairs/elevator fit).
+        """
+        rng = random.Random(seed)
+        nf = num_floors if num_floors is not None else rng.randint(2, 4)
+        return cls(
+            num_floors=nf,
+            seed=seed,
+            villa_width=rng.uniform(14.0, 20.0),
+            villa_depth=rng.uniform(10.0, 15.0),
+            floor_height=rng.uniform(2.9, 3.5),
+            wall_thickness=0.18,
+            include_elevator=rng.random() > 0.15,  # 85% have elevator
+            furniture_density=rng.uniform(0.7, 1.0),
+            variation=0.4,
+        )
 
 
 class VillaBuilder:
@@ -138,8 +160,30 @@ class VillaBuilder:
         self.elevator_target_floor = 0
         self.elevator_direction = 0
 
+        # Geometry records for offline export (box/cylinder primitives)
+        # Each record: dict with type, name, position, dimensions, color_key, motion_type
+        self.geometry_records: List[Dict] = []
+
         # Template cache
         self._template_cache: Dict[str, int] = {}
+
+    def _jitter(self, val: float, amount: float) -> float:
+        """Add random jitter to a value when variation > 0."""
+        if self.config.variation <= 0:
+            return val
+        return val + self.rng.uniform(-amount, amount) * self.config.variation
+
+    def _jitter_pos(self, x: float, y: float, z: float,
+                    amount: float = 0.3) -> Tuple[float, float, float]:
+        """Return a jittered (x, y, z) position."""
+        if self.config.variation <= 0:
+            return (x, y, z)
+        a = amount * self.config.variation
+        return (
+            x + self.rng.uniform(-a, a),
+            y,
+            z + self.rng.uniform(-a, a),
+        )
 
     def build(self):
         """Build the complete villa scene."""
@@ -234,6 +278,12 @@ class VillaBuilder:
                         color_key: str = "wall",
                         rotation: Tuple[float, float, float] = None) -> int:
         """Add a static box object. Returns object ID."""
+        self.geometry_records.append({
+            "type": "box", "name": name,
+            "position": list(position), "size": list(size),
+            "color_key": color_key, "motion_type": "static",
+            "rotation": list(rotation) if rotation else None,
+        })
         tid = self._get_box_template(name, size, color_key)
         obj = self.rigid_mgr.add_object_by_template_id(tid)
         obj.translation = _v3(*position)
@@ -250,6 +300,12 @@ class VillaBuilder:
                              radius: float, height: float,
                              color_key: str = "railing") -> int:
         """Add a static cylinder object."""
+        self.geometry_records.append({
+            "type": "cylinder", "name": name,
+            "position": list(position),
+            "radius": radius, "height": height,
+            "color_key": color_key, "motion_type": "static",
+        })
         tid = self._get_cylinder_template(name, radius, height, color_key)
         obj = self.rigid_mgr.add_object_by_template_id(tid)
         obj.translation = _v3(*position)
@@ -263,6 +319,12 @@ class VillaBuilder:
                  motion_type: str = "static",
                  mass: float = 0.0) -> int:
         """Add a box with specified motion type."""
+        self.geometry_records.append({
+            "type": "box", "name": name,
+            "position": list(position), "size": list(size),
+            "color_key": color_key, "motion_type": motion_type,
+            "mass": mass,
+        })
         tid = self._get_box_template(name, size, color_key)
         obj = self.rigid_mgr.add_object_by_template_id(tid)
         obj.translation = _v3(*position)
@@ -851,27 +913,30 @@ class VillaBuilder:
         """Build living room furniture: sofa, coffee table, TV, bookshelf, etc."""
         x0, z0 = room.x, room.z
         y = room.floor * self.config.floor_height
+        j = lambda dx, dz: self._jitter_pos(dx, 0, dz, amount=0.15)
 
         # L-shaped sofa against the back wall
         # Main sofa
+        sx, _, sz = j(x0, z0 - room.depth / 2 + 0.5)
         self._add_static_box(
             "sofa_main",
-            (x0, y + 0.35, z0 - room.depth / 2 + 0.5),
+            (sx, y + 0.35, sz),
             (3.0, 0.4, 0.9),
             "sofa",
         )
         # Sofa back
         self._add_static_box(
             "sofa_back",
-            (x0, y + 0.7, z0 - room.depth / 2 + 0.15),
+            (sx, y + 0.7, z0 - room.depth / 2 + 0.15),
             (3.0, 0.6, 0.2),
             "sofa",
         )
         # Sofa cushions
         for i in range(3):
+            cx, _, cz = j(x0 - 0.9 + i * 0.9, z0 - room.depth / 2 + 0.5)
             self._add_static_box(
                 f"sofa_cushion_{i}",
-                (x0 - 0.9 + i * 0.9, y + 0.55, z0 - room.depth / 2 + 0.5),
+                (cx, y + 0.55, cz),
                 (0.7, 0.15, 0.7),
                 "sofa_cushion",
             )
@@ -891,9 +956,10 @@ class VillaBuilder:
         )
 
         # Coffee table
+        tx, _, tz = j(x0, z0 - 0.5)
         self._add_static_box(
             "coffee_table_top",
-            (x0, y + 0.42, z0 - 0.5),
+            (tx, y + 0.42, tz),
             (1.4, 0.06, 0.7),
             "table_wood",
         )
@@ -901,7 +967,7 @@ class VillaBuilder:
             for dz in [-0.25, 0.25]:
                 self._add_static_box(
                     f"coffee_leg_{dx}_{dz}",
-                    (x0 + dx, y + 0.2, z0 - 0.5 + dz),
+                    (tx + dx, y + 0.2, tz + dz),
                     (0.06, 0.4, 0.06),
                     "table_wood",
                 )
@@ -1417,3 +1483,78 @@ class VillaBuilder:
             ])
 
         return waypoints
+
+    # ------------------------------------------------------------------
+    # Offline export (GLB + metadata)
+    # ------------------------------------------------------------------
+
+    def get_metadata(self) -> Dict:
+        """Return a JSON-serializable metadata dict for downstream training."""
+        return {
+            "seed": self.config.seed,
+            "num_floors": self.config.num_floors,
+            "floor_height": self.config.floor_height,
+            "villa_width": self.config.villa_width,
+            "villa_depth": self.config.villa_depth,
+            "has_elevator": self.config.include_elevator,
+            "num_objects": len(self.geometry_records),
+            "rooms": [
+                {
+                    "name": r.name,
+                    "type": r.room_type,
+                    "floor": r.floor,
+                    "center": [r.x, r.z],
+                    "size": [r.width, r.depth],
+                }
+                for r in self.rooms
+            ],
+            "spawn_points": [list(p) for p in self.get_spawn_points()],
+            "navigation_waypoints": [list(w) for w in self.get_navigation_waypoints()],
+        }
+
+    def export_glb(self, output_path: str):
+        """Export the entire villa as a binary glTF (.glb) file using trimesh.
+
+        All geometry (walls, floors, stairs, furniture, elevator) is merged
+        into a single scene with vertex colors, suitable for loading in
+        Habitat-Sim, Blender, or other 3D engines.
+        """
+        import trimesh
+
+        scene = trimesh.Scene()
+        # Trimesh uses Y-up by default, same as Habitat-Sim
+
+        for i, rec in enumerate(self.geometry_records):
+            px, py, pz = rec["position"]
+            color = COLORS.get(rec["color_key"], (0.8, 0.8, 0.8, 1.0))
+            rgba = [int(min(max(c, 0), 1) * 255) for c in color[:4]]
+
+            if rec["type"] == "box":
+                sx, sy, sz = rec["size"]
+                mesh = trimesh.creation.box(extents=[sx, sy, sz])
+                # Apply rotation if specified (Euler angles in radians: rx, ry, rz)
+                if rec.get("rotation"):
+                    rx, ry, rz = rec["rotation"]
+                    T = trimesh.transformations.euler_matrix(rx, ry, rz, "sxyz")
+                    mesh.apply_transform(T)
+                mesh.apply_translation([px, py, pz])
+            elif rec["type"] == "cylinder":
+                mesh = trimesh.creation.cylinder(
+                    radius=rec["radius"], height=rec["height"], sections=16
+                )
+                mesh.apply_translation([px, py, pz])
+            else:
+                continue
+
+            # Assign vertex colors
+            mesh.visual.vertex_colors = rgba
+            node_name = f"{rec.get('name', 'obj')}_{i}"
+            # Sanitize node name for glTF (no special chars)
+            node_name = node_name.replace("/", "_").replace("\\", "_")
+            scene.add_geometry(mesh, node_name=node_name)
+
+        # Export as GLB
+        with open(output_path, "wb") as f:
+            f.write(scene.export(file_type="glb"))
+
+        return len(self.geometry_records)
